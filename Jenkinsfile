@@ -8,7 +8,8 @@ pipeline {
     //     pollSCM('*/5 * * * *')
     // }
     parameters {
-        string(name: 'MAVEN_GOAL', defaultValue: 'package', description: 'This is maven goal' )
+        // string(name: 'MAVEN_GOAL', defaultValue: 'clean', description: 'This is maven goal' )
+        choice(name: 'MAVEN_GOAL', choices: ['clean', 'compile', 'package'], description: 'This is maven goal')
         choice(name: 'BRANCH_TO_BUILD', choices: ['declarative', 'master', 'scripted'], description: 'Branch to build')
     }
     stages {
