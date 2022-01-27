@@ -27,7 +27,7 @@ pipeline {
         stage('build-dummy') {
             steps {
              
-                sh echo "dummy script executed"
+                echo "dummy script executed"
             }
         }
     }
