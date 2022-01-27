@@ -29,9 +29,7 @@ pipeline {
              
                 echo "dummy script executed"
             }
-            steps {
-               echo "dummy stages added by me executed"
-            }
+            
         }
     }
     
