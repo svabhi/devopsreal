@@ -31,4 +31,11 @@ pipeline {
             }
         }
     }
+    stages{
+        stage('abhi') {
+           steps {
+               echo "dummy stages added by me executed"
+           }
+        }
+    }
 }
