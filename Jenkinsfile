@@ -24,5 +24,11 @@ pipeline {
                 sh "/usr/local/apache-maven-3.8.4/bin/mvn ${params.MAVEN_GOAL}"
             }
         }
+        stage('build-dummy') {
+            steps {
+             
+                sh echo "dummy script executed"
+            }
+        }
     }
 }
