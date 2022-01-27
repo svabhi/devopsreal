@@ -29,13 +29,10 @@ pipeline {
              
                 echo "dummy script executed"
             }
-        }
-    }
-    stages{
-        stage('abhi') {
-           steps {
+            steps {
                echo "dummy stages added by me executed"
-           }
+            }
         }
     }
+    
 }
